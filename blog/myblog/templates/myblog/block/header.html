@@ -1,0 +1,10 @@
+{% load static %}
+<div class="post_header">
+    <h1 class="post_header_text">
+        {% if post.h1 %}
+            {{ post.h1 }}
+        {% else %}
+            {{ title }}
+        {% endif %}
+    </h1>
+</div>
